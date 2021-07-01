@@ -1,0 +1,136 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: rgb(61, 61, 61);
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* styling begins here */
+
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: #FAFAFA;
+}
+.head{
+	margin-top: 2rem;
+}
+.head h2{
+	font-size: 2em;
+	text-align: center;
+	margin: 0.8rem;
+}
+#bold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.head p{
+	text-align: center;
+	width: 600px;
+	margin: 2rem auto;
+}
+.content{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tile{
+	position: relative;
+	width: 15rem;
+	height: 10rem;
+	margin: 1rem 0.5rem;
+	box-shadow: 0px 10px 20px -10px #5a5a5a;
+	padding-top: 1.2rem;
+}
+
+.tile h3{
+	margin-left: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0.2rem;
+}
+.tile p{
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	font-size: 0.6rem;
+	font-weight: 600;
+	line-height: 1rem;
+	width: 12rem;
+
+}
+.tile img{
+	width: 3rem;
+	position: absolute;
+	top: 7rem;
+	left: 11rem;
+}
+
+#one{
+	border-top: solid 4px #72D5D3;
+}
+#two{
+	border-top: solid 4px #CC6164;
+}
+#three{
+	border-top: solid 4px #F0B56B;
+}
+#four{
+	border-top: solid 4px #649AD8;
+}
+
+@media(max-width: 600px){
+	.content{
+		flex-direction: column;
+	}
+	.head p{
+		width: 300px;
+	}
+	.head h2{
+		font-size: 1.5em;
+	}
+}
